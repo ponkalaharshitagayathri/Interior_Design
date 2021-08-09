@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CONTACT US-Inside Interiors</title>
+  <meta name="viewport" content="width=device-width, initial=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/inside_style.css">
+  <link REL="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Julius+Sans+One:400|Quicksand:700,400">
+  <link REL="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+  $(document).ready(function(){
+
+    //hamburger Toggle
+    $('.menubar').click(function(event){
+    $('.nav').slideToggle(500);
+    event.preventDefault();
+
+    $('.nav li a').click(function(event) {
+        if ($(window).width() < 768) {
+          $('.nav').slideUp(500);
+          event.preventDefault();
+        }
+      });
+});
+
+});
+</script>
+</head>
+<body>
+  <div>
+    <header>
+    <nav class="navigation">
+        <div class="logo" align="center">
+           <img src="img/INT_L.png" alt=" inside interior">
+        </div>
+
+        <div class="hero_image"style="background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(img/int_19.jpg)">
+
+            <div class="hero_text">
+                <ul class="nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="ourwork.html">OUR WORK</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="start_project.html"><button class="btn_1">START YOUR PROJECT</button></a></li>
+
+                </ul>
+                <div class="menubar">
+                  <i class="fa fa-bars"></i></div>
+                <a href="start_project.html"><button id="contact" class="btn">START YOUR PROJECT</button></a>
+                </div>
+                <div class="hero_text_all font">
+                    <h1><strong>CONTACT&nbsp;INSIDE INTERIORS</strong></h1>
+                </div>
+            </div>
+          </nav>
+    </header>
+          <section id="start_project">
+           <div align="center" style="margin-bottom: 30PX;">
+            <h2 style="color: rgba(51, 51, 51, 0.75);"><strong>INSIDE INTERIOR DESIGN</strong></h2>
+           </div>
+          <div class="contactus">
+           <div class="address">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192948!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1600084694459!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+           </div>
+            <div class="address ">
+              <div class="add"> <i class="fa fa-map-marker"></i>&nbsp;
+                New Delhi, India, 110001</div>
+                <div class="add"><i class="fa fa-envelope"></i>&nbsp;
+                  inside@xyz.com</div>
+                  <div class="add"><i class="fa fa-phone"></i>&nbsp;
+                    +91 12345 abcxy</div>
+                    <div class="add"><i class="fa fa-clock-o"></i>&nbsp;Monday - Friday: 10:00-9:00<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday: 10:00-5:00
+                    </div>
+            </div>
+          </div>
+           <div align="center">
+             <h2 style="color: rgba(51, 51, 51, 0.75);"><strong>WORK WITH INSIDE!</strong></h2>
+            <p class="center">If you are interested in hiring Inside for your project, please fill out the following introductory questionnaire.
+              By filling this out you and your design needs. From there, our team will give you a call to quickly cat about how we can help and to set up your initila consultation.
+            </p>
+          <p class="center"><strong>WE ARE EXCITED TO WORK WITH YOU!</strong></p></div>
+             <center><form id="form_start" action="contact.php" method="post">
+                <div class="row">
+
+                    <div>
+                        <label for="fname">Name *</label>
+                    </div>
+                    <div>
+                    <input type="text" id="fname" name="fname"  placeholder="First Name" required>
+                    &nbsp;&nbsp;<input type="text" id="fname" name="lname" placeholder="Last Name">
+                    </div><br>
+
+                    <div>
+                        <label for="email">Email Address *</label>
+                    </div>
+                    <div class="col-50"><input type="email" id="email" name="email" placeholder="Email Address" required></div>
+                 <br>
+                 <div>
+                    <label for="number">Number *</label>
+                </div>
+                <div><input type="number" id="number" name="number" required></div><br>
+
+                <div ><label for="address">Address</label></div>
+                <div><input type="text" id="address" name="address"></div><br>
+
+                <div><label for="city">City,State *</label></div>
+                <div><input type="text" id="city" name="city" required></div><br>
+
+                <div><label for="zip">Zipcode *</label></div>
+                <div><input type="number" id="zip" name="zip" required></div><br>
+
+                <div><label for="budget">Approximate Budget *</label></div>
+                <div><input type="number" id="budget" name="budget" placeholder="Rs." required></div><br>
+
+                <div><label for="how">How did you hear about Inside_interiors? *
+                  <p style="font-size: 12px;">Recommendation, Publication, Internet search, Social media,
+                     Houzz.com, other?</p></label></div><br>
+                     <div><input type="text" id="how" name="how" required></div><br>
+
+                <input type="submit" id="submit" name="submit" value="SUBMIT"><br>
+                </div>
+             </form></center>
+        </section>
+         <footer>
+            <div class="footer">
+            <div class="foot">
+                <div class="social">
+                <ul id="services">
+                    <h2 class="new">LET'S GET SOCIAL!</h2>
+                    <li>
+                      <div class="facebook">
+                        <a href="https://facebook.com" target="_blank">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <span>Facebook</span>
+                    </li>
+                    <li>
+                      <div class="instagram">
+                        <a href="https://www.linkedin.com" target="_blank">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <span>Instagram</span>
+                    </li>
+                    <li>
+                      <div class="pinterest">
+                        <a href="https://pinterest.com" target="_blank">
+                          <i class="fa fa-pinterest" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <span>pinterest</span>
+                    </li>
+                    <li>
+                        <div class="Email">
+                          <a href="https://mail.google.com" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                          </a>
+                        </div>
+                        <span>E-mail</span>
+                      </li>
+                  </ul>
+                  <center><a href="contact.html"><button class="button_1">CONTACT&nbspUS</button></a></center>
+                </div>
+                 <div>
+                  <h2 class="new">Subscribe to Inside NewLetter</h2>
+                     <form id="form">
+                         <div class="row">
+                            <div class="col-75"><input type="text" id="fname" name="fname"  placeholder="First Name" ></div>
+                            <div class="col-75"><input type="text" id="lname" name="lname" placeholder="Last Name"></div>
+                            <div class="col-75"><input type="email" id="email" name="email" placeholder="Email Address"></div>
+                         </div>
+                         <div class="tooltip row"><button type="submit" id="signup"><h3>SIGN UP</h3></button>
+                            <p class="tooltiptext">We will respect the privacy of your information.</p>
+                         </div>
+                     </form>
+
+                 </div>
+            </div>
+            <div class="copyright">
+                <h4>All rights reserved | copyright &copy; Inside interiors 2020 </h4>
+            </div>
+            </div>
+        </footer>
+  </div>
+
+</body>
+</html>
