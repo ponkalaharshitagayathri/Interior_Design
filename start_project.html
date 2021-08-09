@@ -1,0 +1,220 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Start your project-Inside Interiors</title>
+        <meta name="viewport" content="width=device-width, initial=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/inside_style.css">
+        <link REL="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Julius+Sans+One:400|Quicksand:700,400">
+        <link REL="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <script>
+        $(document).ready(function(){
+
+          //hamburger Toggle
+          $('.menubar').click(function(event){
+          $('.nav').slideToggle(500);
+          event.preventDefault();
+          
+          $('.nav li a').click(function(event) {
+              if ($(window).width() < 768) {
+                $('.nav').slideUp(500);
+                event.preventDefault(); 
+              }
+            });
+      });
+      
+      });
+    </script>
+    </head>
+    <body>
+      <div>
+        <header>
+        <nav class="navigation">
+            <div class="logo" align="center">
+               <img src="img/INT_L.png" alt=" inside interior">
+            </div>
+            
+            <div class="hero_image"style="background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(img/int_6.jpg)">
+                
+                <div class="hero_text">
+                    <ul class="nav">
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="ourwork.html">OUR WORK</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="start_project.html"><button class="btn_1">START YOUR PROJECT</button></a></li>
+
+                    </ul>
+                    <div class="menubar">
+                      <i class="fa fa-bars"></i></div>
+                    <a href="start_project.html"><button id="contact" class="btn">START YOUR PROJECT</button></a>
+                    </div>
+                    <div class="hero_text_all font">
+                        <h1><strong>START&nbsp;YOUR PROJECT</strong></h1>
+                    </div>
+                </div>
+              </nav>
+        </header>
+              <section id="start_project">
+             <div>
+               <div align="center">
+                 <h2 style="color: rgba(51, 51, 51, 0.75);"><strong>LET'S GET STARTED!</strong></h2>
+                <h4><b>START BY SUBMITTING THE QUESTIONNAIRE BELOW...</b></h4>
+                <p class="center">By filling out this questionnaire, you tell us about you and your design needs.
+                 From there, our team will give you a call to quickly chat about how we can help and to set up 
+                 your initial consultation.
+                 We are excited to meet you!</p></div>
+                 <center><form id="form_start">
+                    <div class="row">
+                        
+                        <div>
+                            <label for="fname">Name *</label>
+                        </div>
+                        <div>
+                        <input type="text" id="fname" name="fname"  placeholder="First Name" required>
+                        &nbsp;&nbsp;<input type="text" id="fname" name="lname" placeholder="Last Name">
+                        </div><br>
+
+                        <div>
+                            <label for="email">Email Address *</label>
+                        </div>
+                        <div class="col-50"><input type="email" id="email" name="email" placeholder="Email Address" required></div>
+                     </div><br>
+
+                     <div>
+                         <label for="checkbox">Subscribe to the Inside Newsletter *
+                             <p style="font-size: 12px;">you will only recieve few emails yearly</p></label>
+                     </div>
+                     <div><input type="checkbox" id="checkbox" name="checkbox" required></div><br>
+
+                     <div>
+                        <label for="number">Number *</label>
+                    </div>
+                    <div><input type="number" id="number" name="number" required></div><br>
+
+                    <div><label for="list">Project Type *</label></div>
+                    <div><select name="projecttype" required>
+                        <option value="newbuild" selected>New Build</option><br>
+                        <option value="whole">Whole Home Renovation/restoration</option><br>
+                        <option value="partial">Partial Home/Multiple Room</option><br>
+                        <option value="single">Single Room</option><br>
+                        <option value="commercial">Commercial Project</option><br>
+                    </select></div><br>
+
+                    <div ><label for="address">Address</label></div>
+                    <div><input type="text" id="address" name="address"></div><br>
+
+                    <div><label for="city">City,State *</label></div>
+                    <div><input type="text" id="city" name="city" required></div><br>
+
+                    <div><label for="zip">Zipcode *</label></div>
+                    <div><input type="number" id="zip" name="zip" required></div><br>
+
+                    
+                        <div><label for="startdate">Estimated Start Date *</label></div>
+                        <div><input type="date" id="startdate" name="startdate" placeholder="DD/MM/YYYY" required></div><br>
+                    
+                    <div><label for="footage">Approximate Square Footage *</label></div>
+                    <div><input type="number" id="footage" name="footage" required></div><br>
+
+                    <div><label for="budget">Approximate Budget *</label></div>
+                    <div><input type="number" id="budget" name="budget" placeholder="Rs." required></div><br>
+
+                    <div><label for="style"></label>Your Design Style
+                        <p style="font-size: 12px;">choose as many as you like!</p></div><br>
+                        <div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Contemporary</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Modern</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Traditional</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Classic/European</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Global/Ethnic</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Rustic</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Bohemian</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Eclectic</div>
+                        <div><input type="checkbox" id="style" name="style">&nbsp;Unsure</div>
+                        </div><br><br>
+                       
+                    <div><label for="textarea">Let us get to know you better!
+                        <p style="font-size: 12px;">Every project is unique, just as every person behind the project is.
+                        Please help us get to know you a little bit more. For example, where 
+                        are you from? Do you like to entertain? Are you more of a casual or 
+                        sophisticated home owner? Are there any specific needs for your family? Etc.</p> </label></div><br>
+                        <div><textarea type="text" id="textarea" name="textarea"></textarea></div><br><br>
+
+                    <div><label for="how">How did you hear about Atelier? *
+                      <p style="font-size: 12px;">Recommendation, Publication, Internet search, Social media,
+                         Houzz.com, other?</p></label></div><br>
+                         <div><input type="text" id="how" name="how" required></div><br>
+
+                    <input type="submit" id="submit" name="submit" value="SUBMIT"><br>
+                 </form></center>
+             </div> 
+            </section>
+             <footer>
+                <div class="footer">
+                <div class="foot">
+                    <div class="social">
+                    <ul id="services">
+                        <h2 class="new">LET'S GET SOCIAL!</h2>
+                        <li>
+                          <div class="facebook">
+                            <a href="https://facebook.com" target="_blank">
+                              <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                          <span>Facebook</span>
+                        </li>
+                        <li>
+                          <div class="instagram">
+                            <a href="https://www.linkedin.com" target="_blank">
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                          <span>Instagram</span>
+                        </li>
+                        <li>
+                          <div class="pinterest">
+                            <a href="https://pinterest.com" target="_blank">
+                              <i class="fa fa-pinterest" aria-hidden="true"></i>
+                            </a>
+                          </div>
+                          <span>pinterest</span>
+                        </li>
+                        <li>
+                            <div class="Email">
+                              <a href="https://mail.google.com" target="_blank">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                              </a>
+                            </div>
+                            <span>E-mail</span>
+                          </li>
+                      </ul>
+                      <center><a href="contact.html"><button class="button_1">CONTACT&nbspUS</button></a></center>
+                    </div>
+                     <div>
+                      <h2 class="new">Subscribe to Inside NewLetter</h2>
+                         <form id="form">
+                             <div class="row">
+                                <div class="col-75"><input type="text" id="fname" name="fname"  placeholder="First Name" ></div>
+                                <div class="col-75"><input type="text" id="lname" name="lname" placeholder="Last Name"></div>
+                                <div class="col-75"><input type="email" id="email" name="email" placeholder="Email Address"></div>
+                             </div>
+                             <div class="tooltip row"><button type="submit" id="signup"><h3>SIGN UP</h3></button>
+                                <p class="tooltiptext">We will respect the privacy of your information.</p>
+                             </div>
+                         </form>
+                         
+                     </div>
+                </div>
+                <div class="copyright">
+                    <h4>All rights reserved | copyright &copy; Inside interiors 2020 </h4>
+                </div>
+                </div>
+            </footer>
+      </div>
+    </body>
+</html>
